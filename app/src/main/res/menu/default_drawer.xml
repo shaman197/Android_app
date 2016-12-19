@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_log"
+            android:icon="@drawable/ic_menu_log"
+            android:title="Logboek" />
+        <item
+            android:id="@+id/nav_challenge"
+            android:icon="@drawable/ic_menu_challenges"
+            android:title="Mijn uitdagingen" />
+        <item
+            android:id="@+id/nav_quiz"
+            android:icon="@drawable/ic_menu_quiz"
+            android:title="Kennisquiz" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="Informatie" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contact"
+            android:title="Stel een vraag" />
+    </group>
+
+</menu>

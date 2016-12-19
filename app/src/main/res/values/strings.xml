@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">JGZ afval app</string>
+    <string name="login_name">Login</string>
+    <string name="home_name">Home</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">E-mail</string>
+    <string name="prompt_password">Wachtwoord</string>
+    <string name="action_sign_in">Login</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="error_invalid_email">Dit e-mail adres is incorrect</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">Dit password is incorrect</string>
+    <string name="error_field_required">This veld is verplicht</string>
+    <string name="login_fail">Uw e-mailadress/wachtwoord is incorrect</string>
+    <string name="failure">Er is iets fout gegaan</string>
+    <string name="account_type">JGZ userLogin</string>
+    <string name="login_text_top">Dit is een app van JGZ en GGD. Deze app ondersteunt jou bij het aannemen van een gezondere leefstijl</string>
+    <string name="login_text_bottom">Geen account of problemen met inloggen? Neem contact op met jouw JGZ-contactpersoon</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- General fragments -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="breakfast">Ontbijt</string>
+    <string name="lunch">Middageten</string>
+    <string name="dinner">Avondeten</string>
+    <string name="snacks">Snacks</string>
+    <string name="challenges">Uitdagingen</string>
+
+    <!-- General API responses -->
+    <string name="error">Er is iet mis gegaan</string>
+    <string name="retry">Probeer opnieuw</string>
+
+    <!-- Logbook fragments -->
+    <string name="pick_a_date">Selecteer een datum</string>
+    <string name="add_item">+ Voeg toe</string>
+    <string name="name">Naam</string>
+    <string name="amount">Aantal</string>
+    <string name="item_required">Naam en aantal is verplicht</string>
+    <string name="workout">Bewegen</string>
+    <string name="minutes">Minuten</string>
+    <string name="mood">Hoe voel jij je vandaag?</string>
+    <string name="log_item_success">Uw logboek item is verstuurd</string>
+    <string name="response_sad">Hopelijk gaat het de volgende keer beter</string>
+    <string name="response_neutral">Het is je bijna gelukt</string>
+    <string name="response_happy">Blijf zo door gaan</string>
+    <string name="can_not_create_logbook">Er is geen logboek gevonden en er kan geen gemaakt worden</string>
+
+    <!-- Profile fragments -->
+    <string name="profile">Profiel</string>
+    <string name="my_information">mijn informatie</string>
+    <string name="my_name">Naam: %s</string>
+    <string name="my_birth_date">Geboortedatum: %s</string>
+    <string name="my_length">Lengte: %s m</string>
+    <string name="my_gender">Geslacht: %s</string>
+    <string name="my_weight">Gewicht: %s kg</string>
+    <string name="my_notifications">Notificaties</string>
+    <string name="logout">Log uit</string>
+    <string name="daily_around">Dagelijks om: %s uur</string>
+
+    <!-- notification text -->
+    <string name="breakfast_notification">Vul uw ontbijt in</string>
+    <string name="lunch_notification">Vul uw middageten in</string>
+    <string name="dinner_notification">Vul uw avondeten in</string>
+    <string name="challenge_notification">Vergeet niet uw uitdagingen te doen</string>
+
+    <!-- challenge text -->
+    <string name="challenge_description">Kies hier uw 2 uitdagingen van deze week</string>
+    <string name="days_left">Nog %s dagen te gaan</string>
+    <string name="my_challenges">Mijn uitdagingen</string>
+    <string name="done_question">Is het gelukt?</string>
+    <string name="yes">Ja</string>
+    <string name="no">Nee</string>
+    <string name="partial">Deels</string>
+
+    <!-- quiz text -->
+    <string name="quiz_text_top">Dit is de kennisquiz. Hier kan je per week punten behalen en dus ook per week je behaalde punten en voortgang bekijken</string>
+    <string name="start_quiz">Start de quiz</string>
+    <string name="score_list">Scorelijst</string>
+    <string name="week">Week</string>
+    <string name="score">Score</string>
+    <string name="next_question">Volgende vraag</string>
+    <string name="result">Overzicht</string>
+    <string name="quiz_done">Je bent klaar met de quiz!</string>
+    <string name="your_score">Jouw score:</string>
+    <string name="show_answers">Laat mijn antwoorden zien</string>
+    <string name="question_number">Vraag %x</string>
+
+    <!-- info text -->
+    <string name="info">Informatie</string>
+
+    <!-- contact text -->
+    <string name="reciever">recipient@example.com</string>
+    <string name="select_subject">Selecteer een onderwerp</string>
+    <string name="type_message">Vul hier uw bericht in</string>
+    <string name="send">Verstuur</string>
+    <string name="cancel">Annuleren</string>
+    <string name="empty_field">Selecteer een onderwerp &amp; vul het bericht in</string>
+    <string name="no_clients">Er zijn geen e-mail clients geïnstalleerd</string>
+</resources>

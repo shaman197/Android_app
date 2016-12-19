@@ -1,0 +1,231 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlue"
+    tools:context="com.example.jgz.jgzafvalapp.QuizFragment">
+
+    <ProgressBar
+        android:id="@+id/activity_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/start_quiz_layout"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="@string/quiz_text_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ColorWhite"
+                    android:textAlignment="center"
+                    android:textSize="16dp"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:id="@+id/text1" />
+
+                <Button
+                android:id="@+id/start_quiz_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightBlue"
+                android:textColor="@color/ColorWhite"
+                android:layout_margin="@dimen/fab_margin"
+                android:text="@string/start_quiz" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".7"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/colorLightBlue"
+                        android:textColor="@color/ColorWhite"
+                        android:paddingLeft="@dimen/fab_margin"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="@string/score_list" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight=".3"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:background="@color/ColorLightGray"
+                        android:textColor="@color/colorBlue"
+                        android:textAlignment="center"
+                        android:textStyle="bold"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="10sp"
+                        android:text="100" />
+
+                </LinearLayout>
+
+                <TableLayout
+                    android:id="@+id/score_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true" >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dip"
+                        android:background="@color/colorDarkBlue"
+                        android:weightSum="1" >
+
+                        <TextView
+                            android:text="@string/week"
+                            android:layout_width="0dp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/ColorWhite"
+                            android:layout_weight=".5" />
+
+                        <TextView
+                            android:text="@string/score"
+                            android:layout_width="0dp"
+                            android:textAlignment="center"
+                            android:textStyle="bold"
+                            android:textColor="@color/ColorWhite"
+                            android:layout_weight=".5" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/question_layout"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/question_title"
+                    android:adjustViewBounds="true"
+                    android:textColor="@color/ColorWhite"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/fab_margin"
+                    android:textSize="20sp"
+                    android:text="Verse groenten zijn gezonder dan groenten in blik, pot of uit de vriezer" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkBlue"
+                    android:layout_width="match_parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/answers_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:clipToPadding="false" />
+
+                <Button
+                    android:id="@+id/next_question_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBlue"
+                    android:textColor="@color/ColorWhite"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:text="@string/next_question" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/result_layout">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:textColor="@color/ColorWhite"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin"
+                    android:paddingTop="@dimen/fab_margin"
+                    android:textSize="18sp"
+                    android:text="@string/quiz_done" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:textColor="@color/ColorWhite"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/fab_margin"
+                    android:paddingRight="@dimen/fab_margin"
+                    android:paddingBottom="@dimen/fab_margin"
+                    android:textSize="18sp"
+                    android:text="@string/your_score" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/result_score"
+                    android:adjustViewBounds="true"
+                    android:textColor="@color/ColorWhite"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:padding="@dimen/fab_margin"
+                    android:textSize="50sp"
+                    android:text="0" />
+
+                <View
+                    android:layout_height="1dp"
+                    android:background="@color/colorDarkBlue"
+                    android:layout_width="match_parent" />
+
+                <android.support.v7.widget.RecyclerView
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/result_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/fab_margin"
+                    android:clipToPadding="false" />
+
+                <Button
+                    android:id="@+id/show_answers_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorLightBlue"
+                    android:textColor="@color/ColorWhite"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:text="@string/show_answers" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

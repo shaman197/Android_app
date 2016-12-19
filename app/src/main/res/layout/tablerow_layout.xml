@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDarkBlue"
+    android:weightSum="1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:text="@string/week"
+        android:id="@+id/week_content"
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:textColor="@color/ColorWhite"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:layout_weight=".5" />
+
+    <TextView
+        android:text="@string/score"
+        android:id="@+id/score_content"
+        android:layout_width="0dp"
+        android:textAlignment="center"
+        android:textColor="@color/ColorWhite"
+        android:background="@drawable/border"
+        android:padding="5dp"
+        android:layout_weight=".5" />
+</TableRow>
