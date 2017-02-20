@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_autorenew_white_24dp"
+        android:title="action_refresh"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_login"
+        android:icon="@drawable/ic_account_box_white_24dp"
+        android:title="action_login"
+        app:showAsAction="ifRoom"/>
+
+</menu>

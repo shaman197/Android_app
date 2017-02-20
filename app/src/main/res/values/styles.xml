@@ -8,56 +8,6 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <!-- Edittext colors -->
-    <style name="EdittextWhite" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorControlNormal">@color/ColorGray</item>
-        <item name="colorControlActivated">@color/ColorWhite</item>
-        <item name="colorControlHighlight">@color/ColorWhite</item>
-    </style>
-
-    <style name="EdittextGreen" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorControlNormal">@color/ColorGray</item>
-        <item name="colorControlActivated">@color/GreenButton</item>
-        <item name="colorControlHighlight">@color/GreenButton</item>
-    </style>
-
-    <style name="EdittextPurple" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorControlNormal">@color/ColorGray</item>
-        <item name="colorControlActivated">@color/colorPurple</item>
-        <item name="colorControlHighlight">@color/colorPurple</item>
-    </style>
-
-    <!-- Overlay colors -->
-    <style name="OverlayPrimaryBlue">
-        <item name="colorPrimary">@color/colorBlue</item>
-        <item name="colorPrimaryDark">@color/colorLightBlue</item>
-        <item name="colorAccent">@color/colorBlue</item>
-    </style>
-
-    <style name="OverlayPrimaryOrange">
-        <item name="colorPrimary">@color/colorOrange</item>
-        <item name="colorPrimaryDark">@color/colorDarkOrange</item>
-        <item name="colorAccent">@color/colorOrange</item>
-    </style>
-
-    <style name="OverlayPrimaryGreen">
-        <item name="colorPrimary">@color/colorGreen</item>
-        <item name="colorPrimaryDark">@color/colorDarkGreen</item>
-        <item name="colorAccent">@color/colorGreen</item>
-    </style>
-
-    <style name="OverlayPrimaryPink">
-        <item name="colorPrimary">@color/colorPink</item>
-        <item name="colorPrimaryDark">@color/colorDarkPink</item>
-        <item name="colorAccent">@color/colorPink</item>
-    </style>
-
-    <style name="OverlayPrimaryPurple">
-        <item name="colorPrimary">@color/colorPurple</item>
-        <item name="colorPrimaryDark">@color/colorDarkPurple</item>
-        <item name="colorAccent">@color/colorPurple</item>
-    </style>
-
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
